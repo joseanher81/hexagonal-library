@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { CreateUser } from "../../core/usecases/CreateUser";
-import { UserRepositoryMongo } from "../database/UserRepositoryMongo";
+import { CreateUser } from "../core/usecases/CreateUser";
+import { UserRepositoryMongo } from "../adapters/database/UserRepositoryMongo";
 
 const userRepo = new UserRepositoryMongo();
 const createUserUseCase = new CreateUser(userRepo);
