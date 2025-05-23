@@ -1,0 +1,10 @@
+# Node.js
+node_modules/
+npm-debug.log
+.env
+.DS_Store # macOS specific
+dist/ # if you compile your TypeScript to a 'dist' folder
+*.log
+
+# Editor/IDE specific
+.vscode/
